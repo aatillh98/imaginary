@@ -179,6 +179,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
 
   useEffect(() => {
     if(image && (type === 'restore' || type === 'removeBackground')) {
+      alert('ggg')
       setNewTransformation(transformationType.config)
     }
   }, [image, transformationType.config, type])
